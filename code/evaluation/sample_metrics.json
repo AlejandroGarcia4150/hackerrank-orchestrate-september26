@@ -1,0 +1,571 @@
+{
+  "metrics": {
+    "amount_safe_to_pay": {
+      "evaluated": 25,
+      "accuracy": 0.04,
+      "matched": 1,
+      "mean_absolute_error": "157562.7332",
+      "max_absolute_error": "1425000",
+      "mean_relative_error": "0.2620680716382154157877283337",
+      "warning": "Absolute amounts pool different home currencies; use relative error or per-row differences."
+    },
+    "affordability_status": {
+      "evaluated": 25,
+      "accuracy": 0.6,
+      "matched": 15,
+      "confusion": [
+        {
+          "expected": "affordable_later",
+          "predicted": "affordable_later",
+          "count": 2
+        },
+        {
+          "expected": "affordable_later",
+          "predicted": "not_affordable",
+          "count": 4
+        },
+        {
+          "expected": "affordable_now",
+          "predicted": "affordable_now",
+          "count": 1
+        },
+        {
+          "expected": "affordable_now",
+          "predicted": "not_affordable",
+          "count": 2
+        },
+        {
+          "expected": "affordable_with_plan",
+          "predicted": "affordable_later",
+          "count": 1
+        },
+        {
+          "expected": "affordable_with_plan",
+          "predicted": "affordable_now",
+          "count": 1
+        },
+        {
+          "expected": "affordable_with_plan",
+          "predicted": "affordable_with_plan",
+          "count": 5
+        },
+        {
+          "expected": "affordable_with_plan",
+          "predicted": "not_affordable",
+          "count": 2
+        },
+        {
+          "expected": "not_affordable",
+          "predicted": "not_affordable",
+          "count": 7
+        }
+      ]
+    },
+    "recommended_payment_method": {
+      "evaluated": 25,
+      "accuracy": 0.64,
+      "matched": 16,
+      "confusion": [
+        {
+          "expected": "full_payment",
+          "predicted": "full_payment",
+          "count": 2
+        },
+        {
+          "expected": "full_payment",
+          "predicted": "not_recommended",
+          "count": 3
+        },
+        {
+          "expected": "full_payment",
+          "predicted": "wait",
+          "count": 1
+        },
+        {
+          "expected": "installments",
+          "predicted": "installments",
+          "count": 4
+        },
+        {
+          "expected": "installments",
+          "predicted": "not_recommended",
+          "count": 1
+        },
+        {
+          "expected": "not_recommended",
+          "predicted": "not_recommended",
+          "count": 7
+        },
+        {
+          "expected": "partial_payment",
+          "predicted": "partial_payment",
+          "count": 1
+        },
+        {
+          "expected": "wait",
+          "predicted": "not_recommended",
+          "count": 4
+        },
+        {
+          "expected": "wait",
+          "predicted": "wait",
+          "count": 2
+        }
+      ]
+    },
+    "payment_plan": {
+      "evaluated": 25,
+      "accuracy": 0.6,
+      "matched": 15
+    },
+    "earliest_date_for_full_payment": {
+      "evaluated": 25,
+      "accuracy": 0.48,
+      "matched": 12
+    },
+    "spending_changes_needed": {
+      "evaluated": 25,
+      "accuracy": 0.76,
+      "matched": 19
+    },
+    "decision_explanation": {
+      "evaluated": 25,
+      "exact_text_match": 0.0,
+      "note": "Wording is not a quality metric; numeric consistency is validated separately."
+    }
+  },
+  "differences": [
+    {
+      "request_id": "request_02",
+      "column": "amount_safe_to_pay",
+      "expected": "17229139.2",
+      "predicted": "17555114.4"
+    },
+    {
+      "request_id": "request_03",
+      "column": "amount_safe_to_pay",
+      "expected": "873000",
+      "predicted": "872452.6"
+    },
+    {
+      "request_id": "request_04",
+      "column": "amount_safe_to_pay",
+      "expected": "8401800",
+      "predicted": "9567344.9"
+    },
+    {
+      "request_id": "request_05",
+      "column": "amount_safe_to_pay",
+      "expected": "737",
+      "predicted": "0"
+    },
+    {
+      "request_id": "request_06",
+      "column": "amount_safe_to_pay",
+      "expected": "603.3",
+      "predicted": "473.42"
+    },
+    {
+      "request_id": "request_07",
+      "column": "amount_safe_to_pay",
+      "expected": "87170.56",
+      "predicted": "83550.52"
+    },
+    {
+      "request_id": "request_08",
+      "column": "amount_safe_to_pay",
+      "expected": "284.57",
+      "predicted": "213.49"
+    },
+    {
+      "request_id": "request_09",
+      "column": "amount_safe_to_pay",
+      "expected": "166.61",
+      "predicted": "118.6"
+    },
+    {
+      "request_id": "request_10",
+      "column": "amount_safe_to_pay",
+      "expected": "12700",
+      "predicted": "0"
+    },
+    {
+      "request_id": "request_11",
+      "column": "amount_safe_to_pay",
+      "expected": "12510645",
+      "predicted": "11542640.7"
+    },
+    {
+      "request_id": "request_12",
+      "column": "amount_safe_to_pay",
+      "expected": "65164",
+      "predicted": "55861.14"
+    },
+    {
+      "request_id": "request_13",
+      "column": "amount_safe_to_pay",
+      "expected": "433.4",
+      "predicted": "253.16"
+    },
+    {
+      "request_id": "request_14",
+      "column": "amount_safe_to_pay",
+      "expected": "597.74",
+      "predicted": "560.63"
+    },
+    {
+      "request_id": "request_15",
+      "column": "amount_safe_to_pay",
+      "expected": "83.05",
+      "predicted": "0"
+    },
+    {
+      "request_id": "request_16",
+      "column": "amount_safe_to_pay",
+      "expected": "122500",
+      "predicted": "110012.94"
+    },
+    {
+      "request_id": "request_17",
+      "column": "amount_safe_to_pay",
+      "expected": "243849.58",
+      "predicted": "236925.14"
+    },
+    {
+      "request_id": "request_18",
+      "column": "amount_safe_to_pay",
+      "expected": "462",
+      "predicted": "501.74"
+    },
+    {
+      "request_id": "request_19",
+      "column": "amount_safe_to_pay",
+      "expected": "28820",
+      "predicted": "24863.16"
+    },
+    {
+      "request_id": "request_20",
+      "column": "amount_safe_to_pay",
+      "expected": "5400",
+      "predicted": "6978.69"
+    },
+    {
+      "request_id": "request_21",
+      "column": "amount_safe_to_pay",
+      "expected": "1543.35",
+      "predicted": "1574.4"
+    },
+    {
+      "request_id": "request_22",
+      "column": "amount_safe_to_pay",
+      "expected": "475.46",
+      "predicted": "452.97"
+    },
+    {
+      "request_id": "request_23",
+      "column": "amount_safe_to_pay",
+      "expected": "9152",
+      "predicted": "8155.09"
+    },
+    {
+      "request_id": "request_24",
+      "column": "amount_safe_to_pay",
+      "expected": "13420",
+      "predicted": "12369.96"
+    },
+    {
+      "request_id": "request_25",
+      "column": "amount_safe_to_pay",
+      "expected": "1425000",
+      "predicted": "0"
+    },
+    {
+      "request_id": "request_04",
+      "column": "affordability_status",
+      "expected": "affordable_later",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_06",
+      "column": "affordability_status",
+      "expected": "affordable_with_plan",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_08",
+      "column": "affordability_status",
+      "expected": "affordable_later",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_09",
+      "column": "affordability_status",
+      "expected": "affordable_now",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_11",
+      "column": "affordability_status",
+      "expected": "affordable_with_plan",
+      "predicted": "affordable_later"
+    },
+    {
+      "request_id": "request_12",
+      "column": "affordability_status",
+      "expected": "affordable_with_plan",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_13",
+      "column": "affordability_status",
+      "expected": "affordable_later",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_16",
+      "column": "affordability_status",
+      "expected": "affordable_now",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_21",
+      "column": "affordability_status",
+      "expected": "affordable_with_plan",
+      "predicted": "affordable_now"
+    },
+    {
+      "request_id": "request_23",
+      "column": "affordability_status",
+      "expected": "affordable_later",
+      "predicted": "not_affordable"
+    },
+    {
+      "request_id": "request_04",
+      "column": "recommended_payment_method",
+      "expected": "wait",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_06",
+      "column": "recommended_payment_method",
+      "expected": "full_payment",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_08",
+      "column": "recommended_payment_method",
+      "expected": "wait",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_09",
+      "column": "recommended_payment_method",
+      "expected": "full_payment",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_11",
+      "column": "recommended_payment_method",
+      "expected": "full_payment",
+      "predicted": "wait"
+    },
+    {
+      "request_id": "request_12",
+      "column": "recommended_payment_method",
+      "expected": "installments",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_13",
+      "column": "recommended_payment_method",
+      "expected": "wait",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_16",
+      "column": "recommended_payment_method",
+      "expected": "full_payment",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_23",
+      "column": "recommended_payment_method",
+      "expected": "wait",
+      "predicted": "not_recommended"
+    },
+    {
+      "request_id": "request_04",
+      "column": "payment_plan",
+      "expected": "2024-06-15:12693000",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_06",
+      "column": "payment_plan",
+      "expected": "2026-01-03:620.40",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_08",
+      "column": "payment_plan",
+      "expected": "2025-04-15:996.60",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_09",
+      "column": "payment_plan",
+      "expected": "2026-07-04:166.61",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_11",
+      "column": "payment_plan",
+      "expected": "2025-05-03:13110000",
+      "predicted": "2025-05-15:13110000"
+    },
+    {
+      "request_id": "request_12",
+      "column": "payment_plan",
+      "expected": "2026-04-19:22590.19|2026-05-20:22590.19|2026-06-20:22590.19",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_13",
+      "column": "payment_plan",
+      "expected": "2024-05-15:941.60",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_16",
+      "column": "payment_plan",
+      "expected": "2023-08-12:122500",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_19",
+      "column": "payment_plan",
+      "expected": "2024-09-04:28820|2024-09-15:10840",
+      "predicted": "2024-09-04:24863.16|2024-09-15:14796.84"
+    },
+    {
+      "request_id": "request_23",
+      "column": "payment_plan",
+      "expected": "2025-07-15:38016",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_04",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2024-06-15",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_06",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2026-01-15",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_07",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2024-10-23",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_08",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2025-04-15",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_09",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2026-07-04",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_11",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2025-07-15",
+      "predicted": "2025-05-15"
+    },
+    {
+      "request_id": "request_12",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2026-04-05",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_13",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2024-05-15",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_16",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2023-08-12",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_17",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2026-03-15",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_21",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2026-04-15",
+      "predicted": "2026-04-03"
+    },
+    {
+      "request_id": "request_22",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2025-01-15",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_23",
+      "column": "earliest_date_for_full_payment",
+      "expected": "2025-07-15",
+      "predicted": ""
+    },
+    {
+      "request_id": "request_06",
+      "column": "spending_changes_needed",
+      "expected": "stop:event_476",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_07",
+      "column": "spending_changes_needed",
+      "expected": "none",
+      "predicted": "reduce_to:event_606:3885.94"
+    },
+    {
+      "request_id": "request_11",
+      "column": "spending_changes_needed",
+      "expected": "reduce_to:event_989:665950",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_17",
+      "column": "spending_changes_needed",
+      "expected": "none",
+      "predicted": "reduce_to:event_1530:4448.09"
+    },
+    {
+      "request_id": "request_21",
+      "column": "spending_changes_needed",
+      "expected": "stop:event_1815|reduce_to:event_1816:23.50",
+      "predicted": "none"
+    },
+    {
+      "request_id": "request_22",
+      "column": "spending_changes_needed",
+      "expected": "none",
+      "predicted": "stop:event_1864|stop:event_1862"
+    }
+  ]
+}

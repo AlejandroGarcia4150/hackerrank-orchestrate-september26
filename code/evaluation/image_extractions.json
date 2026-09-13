@@ -1,0 +1,292 @@
+[
+  {
+    "image_id": "image_01",
+    "related_event_id": "event_253",
+    "sha256": "f37b40e6af42c664846057252cac89ad41b7d029dfe8dacff2db8cceb79fa5ba",
+    "facts": {
+      "currency": "IDR",
+      "net_pay": "4365000",
+      "salary": "4500000",
+      "total_earnings": "4780800",
+      "total_deductions": "415800",
+      "document_date": "2019-08-31",
+      "reference": "PAY SLIP Aug-2019",
+      "evidence": "Net Pay IDR 4,365,000; total earnings 4,780,800 minus deductions 415,800.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_01.png"
+    },
+    "selected_amount": "4365000",
+    "selected_label": "net_pay",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_02",
+    "related_event_id": "event_1442",
+    "sha256": "ccd779e5382b1bcfacfb47d4ccf346ffd667a34c8b94d0cfd48aa4a609bd117d",
+    "facts": {
+      "currency": "INR",
+      "balance_due": "100000",
+      "total": "200000",
+      "paid": "100000",
+      "document_date": "2023-08-11",
+      "reference": "Receipt No. 9453",
+      "evidence": "Total 2,00,000.00; Amount Received 1,00,000.00; Balance Due 1,00,000.00. Historical lease period differs from event; use explicit outstanding balance only.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_02.png"
+    },
+    "selected_amount": "100000",
+    "selected_label": "balance_due",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_03",
+    "related_event_id": "event_1545",
+    "sha256": "e5fb0bbcda6cc06f8ea95e32e45d4c76acd8c594f4b02ff0d78e6006e103ee4d",
+    "facts": {
+      "currency": "INR",
+      "total": "41272",
+      "paid": "41272",
+      "document_date": "2026-02-27",
+      "reference": "Bill No 1125000158",
+      "evidence": "Net Amount 41272.0; Cash Paid 41272.00.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_03.png"
+    },
+    "selected_amount": "41272",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_04",
+    "related_event_id": "event_1700",
+    "sha256": "281e7f1e7bd1f98fbd53cde1381977373e610e6634b11c98098000001ff10f0c",
+    "facts": {
+      "currency": "INR",
+      "total": "2854",
+      "reference": "Delivered grocery order; 13 items",
+      "evidence": "Visible Item Bill 2854.00; line items reconcile to 2854. Screenshot ends below item bill.",
+      "limitation": "Image is cropped below item bill; additional charges cannot be verified. Historical event only; do not extrapolate this one-time order.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_04.png"
+    },
+    "selected_amount": "2854",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_05",
+    "related_event_id": "event_1786",
+    "sha256": "9abcda5647afb3dcdf91613253ac0160bd722333af33a4b952dfc96fea6ff97b",
+    "facts": {
+      "currency": "INR",
+      "total": "704.05",
+      "due_before": "704.05",
+      "due_after": "822.05",
+      "due_date": "2026-02-06",
+      "reference": "Account summary / telecom charges",
+      "evidence": "Amount due till 06-Feb-2026 704.05; amount due after 06-Feb-2026 822.05. Previous balance paid in full.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_05.png"
+    },
+    "selected_amount": "822.05",
+    "selected_label": "late_amount_due",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_06",
+    "related_event_id": "event_3051",
+    "sha256": "9055551fbe5940feb01b947e1f18ccfed093192d103b1e930a56df0ea7cd3cb4",
+    "facts": {
+      "currency": "INR",
+      "total": "1995",
+      "reference": "Grocery invoice total; 7 units",
+      "evidence": "Total 1995.00; amount in words One Thousand Nine Hundred and Ninety-Five Rupees.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_06.png"
+    },
+    "selected_amount": "1995",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_07",
+    "related_event_id": "event_3231",
+    "sha256": "f6d30a74355224c0b5cda2d7f96399a7b1a0afe4f9fe59ea048bbecb1a21311e",
+    "facts": {
+      "currency": "INR",
+      "total": "8528",
+      "unrounded_total": "8528.10",
+      "paid": "8528",
+      "document_date": "2025-10-29",
+      "reference": "Bill No 10; PAID",
+      "evidence": "Subtotal 8122; taxes 203.05 each; Total 8528.10; rounded Grand Total (RS) 8528; PAID stamp.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_07.png"
+    },
+    "selected_amount": "8528",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_08",
+    "related_event_id": "event_4535",
+    "sha256": "e28592ad8b4dacd03055e0b1ebc46670c83fbfa1162af07bdef33bb226bf63c8",
+    "facts": {
+      "currency": "INR",
+      "total": "15339",
+      "paid": "15339",
+      "document_date": "2026-07-24",
+      "due_date": "2026-08-30",
+      "reference": "Invoice 6455",
+      "evidence": "Total Amount Received 15,339.00; components 13880 + 1050 + 409; convenience fee 0.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_08.png"
+    },
+    "selected_amount": "15339",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_09",
+    "related_event_id": "event_5170",
+    "sha256": "e0e74e14425d923ff8a5c6db26ec6f4f26ee4697bfd257e414ba05c947a75ba8",
+    "facts": {
+      "currency": "INR",
+      "total": "723",
+      "paid": "723",
+      "document_date": "2026-06-07",
+      "due_date": "2026-07-02",
+      "reference": "Invoice 6320",
+      "evidence": "Total Amount Received 723.00; water bill; convenience fee 0.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_09.png"
+    },
+    "selected_amount": "723",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_10",
+    "related_event_id": "event_6033",
+    "sha256": "c90f98caf0877083e471fd47dace772f83d4782037cf112e97c63f79a10ea8cf",
+    "facts": {
+      "currency": "INR",
+      "total": "79679.26",
+      "balance_due": "79679.26",
+      "reference": "Grocery tax invoice; 22 lines",
+      "evidence": "Subtotal 72045; taxes 1513.13 + 1513.13 + 2304 + 2304; Total and Balance Due 79679.26.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_10.png"
+    },
+    "selected_amount": "79679.26",
+    "selected_label": "balance_due",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_11",
+    "related_event_id": "event_6859",
+    "sha256": "795e000d48428c97748e8af370cb02b604bec88cc52ec8930f38dc744624e886",
+    "facts": {
+      "currency": "INR",
+      "total": "3650",
+      "balance_due": "3650",
+      "paid": "0",
+      "document_date": "2023-01-19",
+      "reference": "Provisional hospital bill; admission 000001",
+      "evidence": "Total Bill Amount 3650.00; Amount Payable 3650.00; Amount Paid 0; Balance 3650.00.",
+      "limitation": "Provisional bill; use explicitly stated payable amount, with no invented future medical charges.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_11.png"
+    },
+    "selected_amount": "3650",
+    "selected_label": "balance_due",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_12",
+    "related_event_id": "event_7307",
+    "sha256": "e10b0123e66d512d82f6c431fb741053b336627b89b9d9a138071ac6980a14ff",
+    "facts": {
+      "currency": "USD",
+      "total": "33.50",
+      "paid": "40",
+      "change": "6.50",
+      "document_date": "2025-10-01",
+      "reference": "Trip CC-8923",
+      "evidence": "Ride 28.50 plus surcharge 5; Total 33.50; cash 40 minus change 6.50. Printed date 01/10/2025 matches linked event as day/month.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_12.png"
+    },
+    "selected_amount": "33.50",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_13",
+    "related_event_id": "event_7941",
+    "sha256": "1ae54b378a9556d94b753093ba80e7117caf86fab4d3fe11ec84e3dd2f6d6dd8",
+    "facts": {
+      "currency": "INR",
+      "total": "2298",
+      "paid": "2298",
+      "reference": "Tote bag order; 2 items",
+      "evidence": "Items 699 and 1599; free delivery; Total paid 2298 including taxes.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_13.png"
+    },
+    "selected_amount": "2298",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_14",
+    "related_event_id": "event_9421",
+    "sha256": "bf88e4aa35e6f36304cbf76bf6f505f32b04466bfd5f7df693fcb3ebe8a3e2c1",
+    "facts": {
+      "currency": "INR",
+      "total": "4543",
+      "reference": "Handwritten pharmacy TOTAL",
+      "evidence": "TOTAL 4543.00; entries 1500 + 724 + 796 + 550 + 303 + 670 = 4543.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_14.png"
+    },
+    "selected_amount": "4543",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_15",
+    "related_event_id": "event_9806",
+    "sha256": "0c0fe3d79e670f2b423bbb2aafc0b5601d3eb4e659ac64058cd189abf7792ee1",
+    "facts": {
+      "currency": "INR",
+      "total": "9968",
+      "document_date": "2026-06-07",
+      "reference": "Airline invoice; currency INR",
+      "evidence": "Grand Total incl taxes 9968.00; 9124 taxable + 388 airport + 228 CGST + 228 SGST.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_15.png"
+    },
+    "selected_amount": "9968",
+    "selected_label": "total",
+    "status": "resolved"
+  },
+  {
+    "image_id": "image_16",
+    "related_event_id": "event_10521",
+    "sha256": "2665cf731a861ddb217be5b8082fbd390850a7a98feec018519b6fda0b30b4f8",
+    "facts": {
+      "currency": "INR",
+      "total": "393.22",
+      "paid": "393.22",
+      "document_date": "2026-09-03",
+      "reference": "Charge point 1110; wallet payment",
+      "evidence": "Energy amount 333.24 plus taxes 29.99 + 29.99 = Total 393.22. Payment method WALLET.",
+      "extraction_method": "Codex visual inspection; reviewed arithmetic and semantic label",
+      "source_filename": "image_16.png"
+    },
+    "selected_amount": "393.22",
+    "selected_label": "total",
+    "status": "resolved"
+  }
+]

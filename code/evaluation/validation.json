@@ -1,0 +1,42 @@
+{
+  "requests_processed": 250,
+  "rows_generated": 250,
+  "samples_evaluated": 25,
+  "coverage": 1.0,
+  "schema_columns": [
+    "request_id",
+    "amount_safe_to_pay",
+    "affordability_status",
+    "recommended_payment_method",
+    "payment_plan",
+    "earliest_date_for_full_payment",
+    "spending_changes_needed",
+    "decision_explanation"
+  ],
+  "validation_errors": [],
+  "requests_with_warnings": 0,
+  "requests_with_unresolved_obligations": 0,
+  "images_read": 16,
+  "images_unresolved": 0,
+  "status_counts": {
+    "affordable_now": 48,
+    "not_affordable": 103,
+    "affordable_later": 40,
+    "affordable_with_plan": 59
+  },
+  "method_counts": {
+    "full_payment": 58,
+    "not_recommended": 103,
+    "wait": 40,
+    "installments": 40,
+    "partial_payment": 9
+  },
+  "limitations": [
+    "Forecasts infer recurrence and conservative amounts from finite historical observations; not a guarantee of future actual balances.",
+    "Source examples conflict with the user deadline restriction for some earliest dates and spending-change full payments.",
+    "No hidden ground truth was available. Sample accuracy is measured without tuning rules to request identifiers.",
+    "Development-time visual extraction is replayed from content-addressed evidence; unseen images need local OCR or reviewed facts."
+  ],
+  "output_sha256": "e0f8cb487a4ec9529ffd50b7c7a1a2907a376c4bcc94d892b3b7d166e72b727b",
+  "output_readback_valid": true
+}

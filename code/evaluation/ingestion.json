@@ -1,0 +1,368 @@
+{
+  "requests.csv": {
+    "sha256": "13663d50b7098b28a8c087a02eb085041260999707adade5230d29f1c2e6595d",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "request_id",
+      "user_id",
+      "request_date",
+      "request_type",
+      "requested_amount",
+      "desired_completion_date",
+      "allows_partial_payment",
+      "request_text"
+    ],
+    "rows": 250,
+    "empty_values": {
+      "request_id": 0,
+      "user_id": 0,
+      "request_date": 0,
+      "request_type": 0,
+      "requested_amount": 0,
+      "desired_completion_date": 0,
+      "allows_partial_payment": 0,
+      "request_text": 0
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "request_id": "string",
+      "user_id": "string",
+      "request_date": "string",
+      "request_type": "string",
+      "requested_amount": "decimal",
+      "desired_completion_date": "string",
+      "allows_partial_payment": "string",
+      "request_text": "string"
+    }
+  },
+  "financial_profiles.csv": {
+    "sha256": "fa173608f8ec99c8d9d633eace762695aeaa2d276a509989f0edd8e123c07964",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "user_id",
+      "home_currency",
+      "current_available_balance",
+      "minimum_balance_to_keep",
+      "financial_priorities",
+      "expense_categories_to_protect",
+      "expense_categories_user_is_willing_to_reduce",
+      "expense_categories_user_is_willing_to_stop",
+      "payment_methods_user_will_consider",
+      "max_installment_months"
+    ],
+    "rows": 275,
+    "empty_values": {
+      "user_id": 0,
+      "home_currency": 0,
+      "current_available_balance": 0,
+      "minimum_balance_to_keep": 0,
+      "financial_priorities": 0,
+      "expense_categories_to_protect": 0,
+      "expense_categories_user_is_willing_to_reduce": 39,
+      "expense_categories_user_is_willing_to_stop": 62,
+      "payment_methods_user_will_consider": 0,
+      "max_installment_months": 119
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "user_id": "string",
+      "home_currency": "string",
+      "current_available_balance": "decimal",
+      "minimum_balance_to_keep": "decimal",
+      "financial_priorities": "string",
+      "expense_categories_to_protect": "string",
+      "expense_categories_user_is_willing_to_reduce": "string",
+      "expense_categories_user_is_willing_to_stop": "string",
+      "payment_methods_user_will_consider": "string",
+      "max_installment_months": "decimal"
+    }
+  },
+  "financial_events.csv": {
+    "sha256": "b6c3f43a8ad3a80ca11c72cce6f2818eea06621a3582d2851886fd9127b1229d",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "event_id",
+      "user_id",
+      "event_type",
+      "description",
+      "category",
+      "direction",
+      "amount",
+      "currency",
+      "event_date",
+      "settlement_date",
+      "status",
+      "linked_event_id",
+      "flexibility",
+      "minimum_allowed_amount"
+    ],
+    "rows": 25342,
+    "empty_values": {
+      "event_id": 0,
+      "user_id": 0,
+      "event_type": 0,
+      "description": 0,
+      "category": 0,
+      "direction": 0,
+      "amount": 16,
+      "currency": 0,
+      "event_date": 0,
+      "settlement_date": 10,
+      "status": 0,
+      "linked_event_id": 25284,
+      "flexibility": 0,
+      "minimum_allowed_amount": 22435
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "event_id": "string",
+      "user_id": "string",
+      "event_type": "string",
+      "description": "string",
+      "category": "string",
+      "direction": "string",
+      "amount": "decimal",
+      "currency": "string",
+      "event_date": "string",
+      "settlement_date": "string",
+      "status": "string",
+      "linked_event_id": "string",
+      "flexibility": "string",
+      "minimum_allowed_amount": "decimal"
+    }
+  },
+  "exchange_rates.csv": {
+    "sha256": "ff56e9feb482f909837dc309f52f8de5b167d9d6685a2ee8e8fd807639658a04",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "rate_date",
+      "from_currency",
+      "to_currency",
+      "rate"
+    ],
+    "rows": 134,
+    "empty_values": {
+      "rate_date": 0,
+      "from_currency": 0,
+      "to_currency": 0,
+      "rate": 0
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "rate_date": "string",
+      "from_currency": "string",
+      "to_currency": "string",
+      "rate": "decimal"
+    }
+  },
+  "request_payment_options.csv": {
+    "sha256": "4922c56f10c06698d24b86b8a43580cbc6bc6ee44c95936c3037878005980c40",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "payment_option_id",
+      "request_id",
+      "payment_method",
+      "payment_amount",
+      "number_of_payments",
+      "first_payment_date",
+      "payment_frequency_days",
+      "financing_fee",
+      "total_payable_amount"
+    ],
+    "rows": 790,
+    "empty_values": {
+      "payment_option_id": 0,
+      "request_id": 0,
+      "payment_method": 0,
+      "payment_amount": 0,
+      "number_of_payments": 0,
+      "first_payment_date": 0,
+      "payment_frequency_days": 275,
+      "financing_fee": 0,
+      "total_payable_amount": 0
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "payment_option_id": "string",
+      "request_id": "string",
+      "payment_method": "string",
+      "payment_amount": "decimal",
+      "number_of_payments": "decimal",
+      "first_payment_date": "string",
+      "payment_frequency_days": "decimal",
+      "financing_fee": "decimal",
+      "total_payable_amount": "decimal"
+    }
+  },
+  "messages.csv": {
+    "sha256": "7b9db27a4546a850a76d3475ebf65de80fb9fe374e26d469586f62f537eac9a6",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "message_id",
+      "user_id",
+      "request_id",
+      "related_event_id",
+      "sent_at",
+      "source_type",
+      "message_text"
+    ],
+    "rows": 215,
+    "empty_values": {
+      "message_id": 0,
+      "user_id": 0,
+      "request_id": 87,
+      "related_event_id": 176,
+      "sent_at": 0,
+      "source_type": 0,
+      "message_text": 0
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "message_id": "string",
+      "user_id": "string",
+      "request_id": "string",
+      "related_event_id": "string",
+      "sent_at": "string",
+      "source_type": "string",
+      "message_text": "string"
+    }
+  },
+  "images.csv": {
+    "sha256": "6b5428565ca98e4b71e182f8a8fa3fd3013727399bdea847f3e4a3d2c129dfc9",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "image_id",
+      "user_id",
+      "request_id",
+      "related_event_id"
+    ],
+    "rows": 16,
+    "empty_values": {
+      "image_id": 0,
+      "user_id": 0,
+      "request_id": 0,
+      "related_event_id": 0
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "image_id": "string",
+      "user_id": "string",
+      "request_id": "string",
+      "related_event_id": "string"
+    }
+  },
+  "sample_requests.csv": {
+    "sha256": "117bf2ab9e5f0054bae48afe8506f5daa35929559cb771f2c27dd4fe18da62f6",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "request_id",
+      "user_id",
+      "request_date",
+      "request_type",
+      "requested_amount",
+      "desired_completion_date",
+      "allows_partial_payment",
+      "request_text",
+      "amount_safe_to_pay",
+      "affordability_status",
+      "recommended_payment_method",
+      "payment_plan",
+      "earliest_date_for_full_payment",
+      "spending_changes_needed",
+      "decision_explanation"
+    ],
+    "rows": 25,
+    "empty_values": {
+      "request_id": 0,
+      "user_id": 0,
+      "request_date": 0,
+      "request_type": 0,
+      "requested_amount": 0,
+      "desired_completion_date": 0,
+      "allows_partial_payment": 0,
+      "request_text": 0,
+      "amount_safe_to_pay": 0,
+      "affordability_status": 0,
+      "recommended_payment_method": 0,
+      "payment_plan": 0,
+      "earliest_date_for_full_payment": 7,
+      "spending_changes_needed": 0,
+      "decision_explanation": 0
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "request_id": "string",
+      "user_id": "string",
+      "request_date": "string",
+      "request_type": "string",
+      "requested_amount": "decimal",
+      "desired_completion_date": "string",
+      "allows_partial_payment": "string",
+      "request_text": "string",
+      "amount_safe_to_pay": "decimal",
+      "affordability_status": "string",
+      "recommended_payment_method": "string",
+      "payment_plan": "string",
+      "earliest_date_for_full_payment": "string",
+      "spending_changes_needed": "string",
+      "decision_explanation": "string"
+    }
+  },
+  "output.csv": {
+    "sha256": "e6e6f4aae1eed6d1c178fd3daca7b5ad82cc9c1461650969c373b4dedab43baf",
+    "encoding": "utf-8-sig",
+    "delimiter": ",",
+    "columns": [
+      "request_id",
+      "amount_safe_to_pay",
+      "affordability_status",
+      "recommended_payment_method",
+      "payment_plan",
+      "earliest_date_for_full_payment",
+      "spending_changes_needed",
+      "decision_explanation"
+    ],
+    "rows": 250,
+    "empty_values": {
+      "request_id": 0,
+      "amount_safe_to_pay": 250,
+      "affordability_status": 250,
+      "recommended_payment_method": 250,
+      "payment_plan": 250,
+      "earliest_date_for_full_payment": 250,
+      "spending_changes_needed": 250,
+      "decision_explanation": 250
+    },
+    "identical_duplicate_rows": 0,
+    "malformed_rows": [],
+    "inferred_types": {
+      "request_id": "string",
+      "amount_safe_to_pay": "string",
+      "affordability_status": "string",
+      "recommended_payment_method": "string",
+      "payment_plan": "string",
+      "earliest_date_for_full_payment": "string",
+      "spending_changes_needed": "string",
+      "decision_explanation": "string"
+    }
+  },
+  "problem_statement.md": {
+    "sha256": "3b2bf6889e36ae124e3cc4ce4df98eac8b7dcccf42f92c8e4dc363d722430bd3"
+  }
+}
